@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Akshit Sangwan Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href='#aboutMe'>About Me</a>
+          <a href='#skills'>Skills</a>
+          <a href='#projects'>Projects</a>
+          <a href='#contactForm'>Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='https://media-exp1.licdn.com/dms/image/C4D03AQHBR9zzVdSuEg/profile-displayphoto-shrink_800_800/0/1650702209721?e=1665014400&v=beta&t=CY8tPqM6XdeR-yGqbLiuS62k0tb6vaGtANTSTjdakj4'>
+        <div class='herosectionDetails'>
+          <h1>Akshit Sangwan</h1>
+          <h3>A Professional Newbie</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio magni minima doloribus qui sit ipsum necessitatibus, harum commodi eveniet pariatur quia. Alias commodi, sint eos consequatur, quibusdam vel, maxime aliquam molestiae voluptatem aliquid voluptatum temporibus esse sapiente nam dolorem quod sunt odit amet est perferendis in corrupti rem id? Sint?
+        </p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+            <h1 class='cardHeading'>Skills</h1>
+            <img src='https://www.svgrepo.com/show/197982/html.svg' title='HTMl'>
+            <img src='https://www.svgrepo.com/show/373535/css.svg' title='CSS'>
+            <img src='https://www.svgrepo.com/show/355081/js.svg' title='Javascript'>
+            <img src='https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg' title='Bootstrap'>
+            <img src='https://www.svgrepo.com/show/374035/reactts.svg' title='React'>
+            <img src='https://www.svgrepo.com/show/354118/nodejs.svg' title='Node.JS'>
+            <img src='https://www.svgrepo.com/show/373845/mongo.svg' title='MongoDB'>
+            <img src='https://www.svgrepo.com/show/341847/github.svg' title='Github'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='https://www.svgrepo.com/show/373535/css.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.Some details of the project.Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='https://www.svgrepo.com/show/373535/css.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h1>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='email' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder='Leave a note!' id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
